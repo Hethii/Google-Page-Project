@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Google</title>
+<style>
+    body {
+        margin:0;
+        font-family: arial, sans-serif;
+        font-size: 0.9em;
+    }
+    a {
+        margin: 5px;
+        text-decoration: none;
+        color:black;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    nav {
+        display: flex;
+        justify-content:space-between;
+    }
+    .nav-link {
+        display:flex;
+        align-items:center;
+        padding-left:20px;
+        margin-right:10px;
+    }
+    ul>a, ul>img {
+        padding:0px 8px;
+    }
+    .nav-img:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        cursor:pointer;
+
+    }
+    section {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin:0;
+        }
+        h1 {
+            font-family: arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:7em;
+            margin:5px 0px 20px 0px;;
+        }
+        .google-search {
+            display:flex;
+            justify-content: space-between;
+            width:538px;
+            height:44px;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+            
+        }
+        .google-search:hover {
+            cursor:pointer;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+        }
+        .google-search>input {
+            flex-grow: 1;
+            border:none;
+            outline:none;
+        }
+        input:focus::placeholder {
+            color: transparent;
+        }
+       /* .search-lucky {
+            padding-top:45px;
+        }
+        .search-lucky>input {
+            margin: 0px 5px;
+            border:none;
+            border-radius:5px;
+            height: 36px;
+            padding: 0 20px;
+            background-color: #f8f9fA;
+        }
+        .search-lucky>input:hover {
+            box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.08);
+            cursor:pointer
+        }  */
+        footer {
+            background-color: #f2f2f2;
+            position:fixed;
+            bottom:0;
+            width:100vw;
+            height:50px;
+        }
+        #left-footer {
+            display:flex;
+            justify-content: start;
+            align-items: center;
+            padding-left:15px;
+        }
+        #right-footer {
+            display:flex;
+            justify-content: flex-end;
+            margin-right: 30px;
+            align-items: center;
+        }
+        @media (max-width:600px) {
+                #footer-nav {
+            flex-direction: column;
+        }
+        #left-footer, #right-footer {
+            justify-content: center;
+        }
+        .google-search {
+            width:95vw;
+        }
+    }
+    @media (max-height: 200px) {
+        body {
+            overflow-x:hidden;
+        }
+        section {
+            margin-bottom:20px;
+        }
+        footer {
+            position: relative;
+            margin-top: 50px;
+           
+        }
+
+    }
+    @media (max-height: 200px) and (max-width:630px) {
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            margin-bottom:13px;
+        }
+        footer {
+            position:relative;
+        }
+    }
+    .span-box {
+    color: #4285f4;
+    font-family: roboto-regular,  arial, sans-serif;
+    font-size:16px;
+    position: absolute;
+    left: 215px;
+    bottom: 0;
+    white-space: nowrap;
+    }
+    .edit-box {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: 20px;
+    }
+    .img-box {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+    }
+    .another-box 
+    {
+    max-height: 92px;
+    position: relative;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-link">
+                 <a href="#">About</a>
+                 <a href="#">Store</a>
+            </ul>
+            <ul class="nav-link">
+                <a href="#">Gmail</a>
+                <a href="./index.html">Index</a>
+                <a href="#">Advance Search</a>
+                <img class="nav-img" style="width:15px; height:15px;" src="./show-apps-button.png" alt="app icon">
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="edit-box another-box">
+          <img class="img-box" src="./googlelogo_color_272x92dp.png" alt="Google" height="92" width="272">
+          <span class="span-box">images</span>
+        </div>
+        <div class="google-search">
+            <form method="get" action="http://www.images.google.com/images" class="google-search">
+        <img src="./google-search-magnifying-glass-icon-5.jpg" style="width:20px; height:20px; padding:8px 5px;" alt="search">
+        <input type="text" name="q" placeholder="Search Google or type a URL">
+       <img title="Search by Image" src="./camera icon.png" style="width:28px; height:28px; padding:6px 15px 6px 0px;">
+         <img title="Search by voice" src="./pngwing.com.png" style="width:24px; height:24px; padding:10px 15px 6px 0px;">
+         <img src="./coloured search box.png" style="width:16px; height:16px; padding:12px 15px 6px 0px;">
+         
+       
+    </div>
+
+        </form>
+    
+    </section>
+    <footer>
+        <nav id="footer-nav" style=" background-color: #f2f2f2 ;">
+            <ul id="left-footer">
+                <a href="./index.html">Index</a>
+                <a href="#">Google Advance Search</a>
+            </ul>
+            <ul id="right-footer">
+                <a href="#">Work Done by Ezer Tobi</a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Advance Page</title>
+        <style>
+            body {
+                margin:0;
+                font-family: arial, sans-serif;
+            }
+            header {
+                display:flex;
+                justify-content:space-between;
+            }
+            ul {
+                display:flex;
+                flex-direction:row;
+                padding: 0px 20px 2px 20px;
+                align-items:center;
+                
+            }
+            .advance {
+        color: #d93025;
+        font-size: 20px;
+        margin: 25px 35px;
+        font-family: arial, sans-serif;
+     
+            }
+            hr {
+            opacity:0.2;
+               
+            }
+            section {
+                
+                width:100%;
+                height: 29px;
+            }
+           span {
+            padding-top: 30px;
+               margin-left: 35px;
+               color:#333333;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    font-size: 16px;
+    min-height: 42px;
+    font-weight: 500;
+    vertical-align: middle;
+           }
+            .float {
+            
+                font-size: 13px;
+                margin-left: 35px;
+                color:#222222;
+            }
+     
+            .first {
+                margin-right:70px;
+                margin-top: 8px;
+                vertical-align: middle;
+            }
+            .second {
+               
+                margin-right:12px;
+                margin-top: 17px;
+                vertical-align: middle;
+            }
+            .third {
+                margin-right:48px;
+                margin-top: 17px;
+            }
+            .fourth {
+                margin-right:40px;
+                margin-top: 17px;
+            }
+           
+            input[type="text"] {
+             outline: none;
+          
+                text-align: left;
+               }
+               input[type="text"]:focus {
+             outline: 1px solid blue;
+          
+                text-align: left;
+               }
+              .text-box1, .text-box2, .text-box3, .text-box4 {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    width:45%;
+}
+    .text-box2, .text-box3, .text-box4 {
+        margin-top:10px;
+    }
+    .button {
+        padding:0px 15px;
+        background-color: #4d90fe;
+        color:white;
+        outline:0px;
+        justify-content: space-between;
+     line-height: 100%;
+        display:flex;
+        border-radius: 2px;
+        float:right;
+        text-align: center;
+        font-size:11px;
+        font-weight:bold;
+        border: 1px solid #3079ed;
+        height:30px;
+        margin: 15px 34.1%;
+        min-width: 120px;
+    }
+    .button:hover {
+        outline: 1px solid rgba(0, 0, 0, 0.2) ;
+        border: 1px solid #3079ed;
+        background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    } 
+    </style>
+    </head>
+    <body>
+        <header>
+            <ul class="google-box">
+            <img src="./googlelogo_color_272x92dp.png" width="74" height="24" >
+        </ul>
+        <ul class="app-box">
+            <img src="./show-apps-button.png" width="24" height="24">
+        </ul>
+        </header>
+        <section>
+        <div class="advance">Advance Search</div>
+        <hr>
+        <span>Find pages with...</span>
+        <form method="get" action="https://www.google.com/search" name="f">
+            <div>
+                <div class="float first" style="float:left; clear:both;">all these words:</div>
+            <input type="text" class="text-box1" name="as_q">
+            
+            </div>
+
+            <div>
+                <div class="float second" style="float:left; clear:both;" >this exact word or phrase:</div>
+        <input type="text" class="text-box2" name="as_epq">
+        </div>
+            <div>
+                <div class="float third" style="float:left; clear:both;">any of these words:</div>
+                <input type="text" class="text-box3" name="as_oq">
+            </div>
+            
+            <div>
+                <div class="float fourth" style="float:left; clear:both;">none of these words:</div>
+                <input type="text" class="text-box4" name="as_eq">
+            </div>
+            <input type="submit" value="Advance Search" class="button">
+        </form>
+            </section>
+        
+    </body>
+</html>

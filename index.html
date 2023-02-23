@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Google</title>
+<style>
+    body {
+        margin:0;
+        font-family: arial, sans-serif;
+        font-size: 0.9em;
+    }
+    a {
+        margin: 5px;
+        text-decoration: none;
+        color:black;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    nav {
+        display: flex;
+        justify-content:space-between;
+    }
+    .nav-link {
+        display:flex;
+        align-items:center;
+        padding-left:20px;
+        margin-right:10px;
+    }
+    ul>a, ul>img {
+        padding:0px 8px;
+    }
+    .nav-img:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        cursor:pointer;
+
+    }
+    section {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin:0;
+        }
+        h1 {
+            font-family: arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:7em;
+            margin:5px 0px 20px 0px;;
+        }
+        .google-search {
+            display:flex;
+            justify-content: space-between;
+            width:538px;
+            height:44px;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+            
+        }
+        .google-search:hover {
+            cursor:pointer;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+        }
+        .google-search>input {
+            flex-grow: 1;
+            border:none;
+            outline:none;
+        }
+        input:focus::placeholder {
+            color: transparent;
+        }
+        .search-lucky {
+            padding-top:45px;
+        }
+        .search-lucky>input {
+            margin: 0px 5px;
+            border:none;
+            border-radius:5px;
+            height: 36px;
+            padding: 0 20px;
+            background-color: #f8f9fA;
+        }
+        .search-lucky>input:hover {
+            box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.08);
+            cursor:pointer
+        }
+        footer {
+            background-color: #f2f2f2;
+            position:fixed;
+            bottom:0;
+            width:100vw;
+            height:50px;
+        }
+        #left-footer {
+            display:flex;
+            justify-content: start;
+            align-items: center;
+            padding-left:15px;
+        }
+        #right-footer {
+            display:flex;
+            justify-content: flex-end;
+            margin-right: 30px;
+            align-items: center;
+        }
+        @media (max-width:600px) {
+                #footer-nav {
+            flex-direction: column;
+        }
+        #left-footer, #right-footer {
+            justify-content: center;
+        }
+        .google-search {
+            width:95vw;
+        }
+    }
+    @media (max-height: 200px) {
+        body {
+            overflow-x:hidden;
+        }
+       
+        footer {
+            position: relative;
+            margin-top: 50px;
+           
+        }
+
+    }
+    @media (max-height: 200px) and (max-width:630px) {
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            margin-bottom:13px;
+        }
+        footer {
+            position:relative;
+        }
+    }
+ 
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-link">
+                 <a href="#">About</a>
+                 <a href="#">Store</a>
+            </ul>
+            <ul class="nav-link">
+                <a href="#">Gmail</a>
+                <a href="./Google Image Search.html">Images</a>
+                <a href="./Google Advance Search.html">Advance Search</a>
+                <img class="nav-img" style="width:15px; height:15px;" src="./show-apps-button.png" alt="app icon">
+            </ul>
+        </nav>
+    </header>
+    <section>
+    
+        <h1>
+            
+            <span style="color: rgb(66 133 244);">G</span><span style="color:rgb(219 68 55);">o</span><span style="color: rgb(244 180 0);">o</span><span style="color: rgb(66 133 244);">g</span><span style="color: rgb(15 157 88);">l</span><span style="color: rgb(219 68 55); display:inline-block; transform:rotate(-10deg);">e</span></h1>
+
+        <div class="google-search">
+            <form action="https://www.google.com/search" class="google-search">
+        <img src="./google-search-magnifying-glass-icon-5.jpg" style="width:20px; height:20px; padding:8px 5px;" alt="search">
+        <input type="text" name="q" placeholder="Search Google or type a URL">
+      
+         <img title="Search by voice" src="./pngwing.com.png" style="width:24px; height:24px; padding:8px 15px;">
+         
+       
+    </div>
+    <div class="search-lucky">
+           <input type="submit" name="btnK" value="Google Search" class="button">
+           <input type="submit" name="btnI" value="I'm Feeling Lucky" class="button">
+        </div>
+        </form>
+    
+    </section>
+    <footer>
+        <nav id="footer-nav" style=" background-color: #f2f2f2 ;">
+            <ul id="left-footer">
+                <a href="./Google Image Search.html">Google Images</a>
+                <a href="./Google Advance Search.html">Google Advance Search</a>
+            </ul>
+            <ul id="right-footer">
+                <a href="#">Work Done by Ezer Tobi</a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
